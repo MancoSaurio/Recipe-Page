@@ -1,0 +1,135 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+
+  --FontPrimary: "Outfit", serif;
+  --FontSecundary: "Young Serif", sans-serif;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--FontPrimary);
+  background-color: var(--Stone100);
+  color: var(--Stone600);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--FontSecundary);
+}
+
+h2 {
+  color: var(--Brown-800);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.recipe-page {
+  background-color: var(--White);
+  width: min(720px, 100%);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.recipe-page img {
+  border-radius: 1.5rem;
+}
+
+.preparation-recipe-page {
+  background-color: var(--Rose50);
+  border-radius: 1rem;
+  padding: 0.3rem 2rem;
+}
+
+.preparation-recipe-page h3 {
+  color: var(--Rose800);
+}
+
+.preparation-recipe-page span {
+  font-weight: 700;
+}
+
+.list-preparation {
+  line-height: 2;
+}
+
+.list-preparation li {
+  padding-left: 2rem;
+}
+
+.list-preparation li::marker {
+  color: var(--Rose800);
+}
+
+.list-ingredients {
+  line-height: 2;
+}
+.list-ingredients li {
+  padding-left: 1rem;
+}
+
+.list-ingredients li::marker {
+  color: var(--Brown-800);
+}
+
+.list-instructions li {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.list-instructions li::marker {
+  color: var(--Brown-800);
+  font-weight: 600;
+}
+
+.list-instructions li span {
+  font-weight: 700;
+}
+
+.border-solid {
+  border-bottom: solid 1px var(--Stone150);
+}
+
+.value-nutrition {
+  color: var(--Brown-800);
+  font-weight: 700;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table td {
+  border-bottom: solid 1px var(--Stone150);
+  padding: 1.2rem 1.6rem;
+}
+.nutrition-table tr:last-child td {
+  border: none;
+}
